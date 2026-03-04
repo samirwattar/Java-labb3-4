@@ -8,7 +8,7 @@ public class GameBoard extends JComponent {
 	private final int FPS = 40;
 	private Game game;
 	private Keyboard keyboard;
-	public GameBoard() {
+	public GameBoard(LatestRuns latestRuns) {
 		keyboard = new Keyboard();
 		game = new Game(this);
 	}

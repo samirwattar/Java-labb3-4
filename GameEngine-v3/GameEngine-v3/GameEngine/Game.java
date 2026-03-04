@@ -101,10 +101,6 @@ public class Game {
 		gameOver = true;
 		gameOverMessage = message;
 
-		if (!scoreSaved) {
-			SaveFileScore.saveScore(gameStates.getScore());
-			scoreSaved = true;
-		}
 	}
 
 	public void draw(Graphics2D graphics) {

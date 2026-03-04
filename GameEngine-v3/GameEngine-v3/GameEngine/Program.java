@@ -9,10 +9,14 @@ public class Program extends JFrame {
 	GameBoard board;
 
 	public Program() {
-		board = new GameBoard();
+		LatestRuns latestRuns = new LatestRuns();
+
+		board = new GameBoard(latestRuns);
+		LatestRunsPanel latestRunsPanel = new LatestRunsPanel(latestRuns);
 
 		setLayout(new BorderLayout());
 		add(board, BorderLayout.CENTER);
+		add(latestRunsPanel, BorderLayout.WEST);
 
 		setResizable(false);
 		pack();
