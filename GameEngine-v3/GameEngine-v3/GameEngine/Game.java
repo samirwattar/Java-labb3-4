@@ -17,8 +17,10 @@ public class Game {
 	private boolean scoreSaved = false;
 	private boolean gameOver = false;
 	private String gameOverMessage = "";
+	private LatestRuns latestRuns;
 
-	public Game(GameBoard board) {
+	public Game(GameBoard board, LatestRuns latestRuns) {
+		this.latestRuns = latestRuns;
 		gameStates = new GameStates();
 		boxes = Spawner.createMultipleRows(1, 8);
 		bat = new Bat(350, 550, 100, 20, Color.WHITE);
@@ -100,6 +102,7 @@ public class Game {
 	private void endGame(String message) {
 		gameOver = true;
 		gameOverMessage = message;
+		latestRuns.add(gameStates.getScore());
 
 	}
 

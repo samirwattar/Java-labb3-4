@@ -10,7 +10,7 @@ public class GameBoard extends JComponent {
 	private Keyboard keyboard;
 	public GameBoard(LatestRuns latestRuns) {
 		keyboard = new Keyboard();
-		game = new Game(this);
+		game = new Game(this, latestRuns);
 	}
 	
 	@Override
