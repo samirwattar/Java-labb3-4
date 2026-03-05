@@ -103,7 +103,6 @@ public class Game {
 		gameOver = true;
 		gameOverMessage = message;
 		latestRuns.add(gameStates.getScore());
-
 	}
 
 	public void draw(Graphics2D graphics) {

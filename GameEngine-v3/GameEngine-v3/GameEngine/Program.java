@@ -10,10 +10,12 @@ public class Program extends JFrame {
 
 	public Program() {
 		LatestRuns latestRuns = new LatestRuns();
-
-		board = new GameBoard(latestRuns);
 		LatestRunsPanel latestRunsPanel = new LatestRunsPanel(latestRuns);
+<<<<<<< Updated upstream
 		
+=======
+		board = new GameBoard();
+>>>>>>> Stashed changes
 
 		setLayout(new BorderLayout());
 		add(board, BorderLayout.CENTER);
