@@ -13,6 +13,7 @@ public class Program extends JFrame {
 
 		board = new GameBoard(latestRuns);
 		LatestRunsPanel latestRunsPanel = new LatestRunsPanel(latestRuns);
+		
 
 		setLayout(new BorderLayout());
 		add(board, BorderLayout.CENTER);
